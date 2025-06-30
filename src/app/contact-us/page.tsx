@@ -112,8 +112,8 @@ export default function ContactUs() {
           transition={{ delay: 0.2, duration: 0.8 }}
           className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto"
         >
-          We'd love to hear from you! Contact us for appointments, questions, or
-          just to say hello.
+          We&apos;d love to hear from you! Contact us for appointments,
+          questions, or just to say hello.
         </motion.p>
       </section>
 

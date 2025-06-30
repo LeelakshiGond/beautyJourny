@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 
 const galleryItems = [
   {
@@ -166,9 +167,11 @@ export default function Gallery() {
             >
               <div className="aspect-[4/3] overflow-hidden">
                 {item.type === "image" ? (
-                  <img
+                  <Image
                     src={item.src}
                     alt={item.alt}
+                    width={400}
+                    height={300}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 ) : (
@@ -220,9 +223,11 @@ export default function Gallery() {
           >
             <div className="aspect-video bg-gray-200 flex items-center justify-center">
               {selectedItem.type === "image" ? (
-                <img
+                <Image
                   src={selectedItem.src}
                   alt={selectedItem.alt}
+                  width={800}
+                  height={600}
                   className="w-full h-full object-cover"
                 />
               ) : (

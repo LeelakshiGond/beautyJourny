@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { StarIcon, HeartIcon, SparklesIcon } from "@heroicons/react/24/solid";
+import Image from "next/image";
 
 const stats = [
   {
@@ -142,15 +142,15 @@ export default function AboutUs() {
                 comfort, where every client feels valued and beautiful.
               </p>
               <p>
-                Over the years, we've grown from a single room to a full-service
-                beauty destination, but our commitment to excellence and
-                personal care has never wavered. We've invested in the latest
-                technology and continuously train our team to stay ahead of
-                beauty trends.
+                Over the years, we&apos;ve grown from a single room to a
+                full-service beauty destination, but our commitment to
+                excellence and personal care has never wavered. We&apos;ve
+                invested in the latest technology and continuously train our
+                team to stay ahead of beauty trends.
               </p>
               <p>
-                Today, we're proud to serve hundreds of satisfied clients and
-                continue to be a trusted name in beauty and wellness in our
+                Today, we&apos;re proud to serve hundreds of satisfied clients
+                and continue to be a trusted name in beauty and wellness in our
                 community.
               </p>
             </div>
@@ -227,9 +227,11 @@ export default function AboutUs() {
               className="bg-white/80 backdrop-blur-sm rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
-                <img
+                <Image
                   src={member.image}
                   alt={member.name}
+                  width={96}
+                  height={96}
                   className="w-full h-full object-cover"
                 />
               </div>

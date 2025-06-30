@@ -9,6 +9,7 @@ import {
   SparklesIcon,
   CheckCircleIcon,
 } from "@heroicons/react/24/solid";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -372,9 +373,11 @@ export default function Testimonials() {
                   <div className="flex flex-col h-full">
                     {/* Header */}
                     <div className="flex items-start mb-4 sm:mb-6">
-                      <img
+                      <Image
                         src={testimonials[currentIndex].image}
                         alt={testimonials[currentIndex].name}
+                        width={64}
+                        height={64}
                         className="w-12 h-12 sm:w-16 sm:h-16 rounded-full object-cover mr-3 sm:mr-4 flex-shrink-0"
                       />
                       <div className="flex-1">
