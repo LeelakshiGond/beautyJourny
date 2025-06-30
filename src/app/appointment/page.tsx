@@ -5,8 +5,6 @@ import {
   CalendarIcon,
   ClockIcon,
   UserIcon,
-  PhoneIcon,
-  EnvelopeIcon,
   CheckCircleIcon,
   ExclamationCircleIcon,
 } from "@heroicons/react/24/outline";
@@ -230,8 +228,8 @@ export default function Appointment() {
               Appointment Booked Successfully!
             </h1>
             <p className="text-lg text-gray-600 mb-8">
-              We've sent a confirmation email to {formData.email}. Please check
-              your inbox for details.
+              We&apos;ve sent a confirmation email to {formData.email}. Please
+              check your inbox for details.
             </p>
 
             {/* Appointment Summary */}
@@ -311,7 +309,7 @@ export default function Appointment() {
           transition={{ delay: 0.2, duration: 0.8 }}
           className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4"
         >
-          Choose your preferred service and time slot. We'll confirm your
+          Choose your preferred service and time slot. We&apos;ll confirm your
           appointment and send you a reminder.
         </motion.p>
       </section>

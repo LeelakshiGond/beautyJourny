@@ -189,7 +189,7 @@ export default function Services() {
               >
                 <div className="border-t border-gray-200 pt-4">
                   <h4 className="font-semibold text-gray-800 mb-3">
-                    What's Included:
+                    What&apos;s Included:
                   </h4>
                   <ul className="space-y-2">
                     {service.features.map((feature, featureIndex) => (

@@ -6,7 +6,6 @@ import {
   ChevronLeftIcon,
   ChevronRightIcon,
   StarIcon,
-  HeartIcon,
   SparklesIcon,
   CheckCircleIcon,
 } from "@heroicons/react/24/solid";
@@ -412,11 +411,11 @@ export default function Testimonials() {
                     {/* Review */}
                     <div className="flex-1">
                       <blockquote className="text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed mb-4 sm:mb-6 italic">
-                        "
+                        &ldquo;
                         {showEnglish
                           ? testimonials[currentIndex].reviewEnglish
                           : testimonials[currentIndex].review}
-                        "
+                        &rdquo;
                       </blockquote>
 
                       {/* Before/After Badge */}
