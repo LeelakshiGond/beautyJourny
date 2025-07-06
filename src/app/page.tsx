@@ -8,7 +8,6 @@ import {
   HeartIcon,
   ArrowRightIcon,
 } from "@heroicons/react/24/solid";
-// TODO: Import 3D/Three.js components when ready
 
 const beautyServices = [
   {

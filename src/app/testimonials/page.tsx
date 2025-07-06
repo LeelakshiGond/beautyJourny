@@ -624,13 +624,13 @@ export default function Testimonials() {
                         className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed italic relative"
                       >
                         <span className="text-4xl text-rose-300 absolute -top-2 -left-2">
-                          "
+                          &ldquo;
                         </span>
                         {showEnglish
                           ? testimonials[currentIndex].reviewEnglish
                           : testimonials[currentIndex].review}
                         <span className="text-4xl text-rose-300 absolute -bottom-2 -right-2">
-                          "
+                          &rdquo;
                         </span>
                       </motion.blockquote>
 
