@@ -7,7 +7,7 @@ const pricingPlans = [
   {
     id: 1,
     name: "Basic Beauty",
-    price: 99,
+    price: 8299,
     duration: "month",
     description: "Perfect for occasional beauty treatments",
     features: [
@@ -23,7 +23,7 @@ const pricingPlans = [
   {
     id: 2,
     name: "Premium Glow",
-    price: 199,
+    price: 16599,
     duration: "month",
     description: "Most popular choice for beauty enthusiasts",
     features: [
@@ -41,7 +41,7 @@ const pricingPlans = [
   {
     id: 3,
     name: "Luxury Experience",
-    price: 399,
+    price: 33199,
     duration: "month",
     description: "Ultimate beauty transformation package",
     features: [
@@ -63,25 +63,25 @@ const pricingPlans = [
 const addOnServices = [
   {
     name: "Lash Extensions",
-    price: 150,
+    price: 12499,
     duration: "session",
     description: "Professional lash extensions for stunning eyes",
   },
   {
     name: "Bridal Package",
-    price: 500,
+    price: 41499,
     duration: "package",
     description: "Complete bridal beauty transformation",
   },
   {
     name: "Spa Day",
-    price: 300,
+    price: 24899,
     duration: "day",
     description: "Full day of relaxation and beauty treatments",
   },
   {
     name: "Makeup Lesson",
-    price: 120,
+    price: 9999,
     duration: "session",
     description: "Learn professional makeup techniques",
   },
@@ -196,13 +196,14 @@ export default function Pricing() {
                 <p className="text-gray-600 mb-6">{plan.description}</p>
                 <div className="mb-4">
                   <span className="text-4xl font-bold text-gray-900">
-                    ${getPrice(plan.price)}
+                    ₹{getPrice(plan.price).toLocaleString("en-IN")}
                   </span>
                   <span className="text-gray-500">/{billingCycle}</span>
                 </div>
                 {billingCycle === "year" && (
                   <p className="text-sm text-green-600 font-medium">
-                    Save ${getSavings(plan.price)} per year
+                    Save ₹{getSavings(plan.price).toLocaleString("en-IN")} per
+                    year
                   </p>
                 )}
               </div>
@@ -272,7 +273,7 @@ export default function Pricing() {
               </p>
               <div className="flex items-center justify-between">
                 <span className="text-2xl font-bold text-rose-500">
-                  ${service.price}
+                  ₹{service.price.toLocaleString("en-IN")}
                 </span>
                 <span className="text-sm text-gray-500">
                   /{service.duration}
