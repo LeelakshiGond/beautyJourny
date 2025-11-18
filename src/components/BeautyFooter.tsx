@@ -258,7 +258,7 @@ export default function BeautyFooter() {
                   className="flex items-center gap-1 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full text-white text-xs sm:text-sm font-medium hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-200"
                 >
                   <StarIcon className="w-2.5 h-2.5 sm:w-3 sm:h-3 flex-shrink-0" />
-                  <span>Rewinity Labs</span>
+                  <span>EcamusStreet</span>
                 </motion.a>
               </motion.div>
             </div>
